@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso Cantinho💖</title>
+<style>
+/* Fontes e cores */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff99cc, #ffe6f0);
+    overflow-x: hidden;
+    text-align: center;
+    position: relative;
+}
+
+/* Título */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #d394ad;
+    margin-top: 45px;
+    text-shadow: 1px 1px 8px #ebebeb;
+}
+
+/* Botões */
+.container {
+    margin-top: 30px;
+}
+.btn {
+    padding: 15px 35px;
+    margin: 10px;
+    background-color: #c4a7b2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.btn:hover {
+    background-color: #ff1a6d;
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Conteúdo escondido */
+.hidden-content {
+    display: none;
+    margin: 25px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff0f5;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: fadeZoom 0.8s ease forwards;
+}
+.hidden-content img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: transform 0.5s;
+}
+.hidden-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Animação de fade + zoom */
+@keyframes fadeZoom {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Parágrafos fofos */
+p {
+    font-size: 1.2em;
+    color: #c48fbf;
+    line-height: 1.6em;
+}
+
+/* Quadradinhos flutuantes */
+.square {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 4px; /* levemente arredondado se quiser */
+    animation: floatSquare linear infinite;
+}
+
+@keyframes floatSquare {
+    0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-110vh) translateX(50px) rotate(360deg); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<h1>Nosso Cantinho para Lembranças 💖</h1>
+<div class="container">
+    <button class="btn" onclick="toggleContent('first')">Primeiro Encontro</button>
+    <button class="btn" onclick="toggleContent('happy')">Momentos Felizes</button>
+    <button class="btn" onclick="toggleContent('messages')">Mensagens e Lembranças</button>
+    <button class="btn" onclick="toggleContent('surprise')">Surpresa</button>
+
+    <!-- Seções escondidas -->
+    <div class="hidden-content" id="first">
+        <h2>Nosso Primeiro Encontro</h2>
+        <p>Rihan, lembro de cada detalhe daquele dia como se fosse ontem. O jeito que você sorriu, as nossas risadas, a sensação de que algo mágico estava começando… Cada instante ficou guardado em mim como se fosse precioso demais para esquecer. Desde aquele momento, eu soube que queria você por perto, sempre. Cada lembrança daquele dia me faz perceber como somos especiais juntos, e como nada do que aconteceu depois poderia apagar o que sentimos. Eu quero que você saiba que você sempre terá um lugar seguro comigo, um espaço para ser você mesmo, sem medo, sem pressa. Nós crescemos, aprendemos e nos amamos a cada momento, e eu nunca vou deixar que dúvidas ou confusões tirem isso de nós. Você é meu porto seguro, e eu quero continuar sendo o seu também.</p>
+        <img src="fotinhas/primeiromomento.jpg" alt="Primeiro Encontro">
+        <img src="fotinhas/code.jpg" alt="Primeiro Encontro">
+         <img src="fotinhas/momentos/nossss.png" alt="Primeiro Encontro">
+    </div>
+
+    <div class="hidden-content" id="happy">
+        <h2>Momentos Felizes</h2>
+        <p>Quando penso em tudo que vivemos, não consigo deixar de sorrir. Cada conversa boba, cada web abraço apertado, cada risada compartilhada se tornou inesquecível para mim e cada gozada nossa. Você trouxe alegria, leveza e amor para a minha vida de um jeito que ninguém mais conseguiu. Todos os momentos felizes que tivemos são provas do que construímos juntos, e nada nem ninguém pode tirar isso de nós. Quero que você lembre disso sempre que alguma dúvida surgir: nós nos amamos de verdade, e nosso amor é maior do que qualquer incerteza ou medo passageiro. Cada instante ao seu lado é único, e eu guardo cada lembrança como um tesouro, porque você é insubstituível para mim</p>
+        <img src="fotinhas/momentos/eh.png" alt="Momentos Felizes">
+        <img src="fotinhas/momentos/FiveM_b3095_GTAProcess_rhkTdfPuOP.jpg" alt="Momentos Felizes">
+        <img src="fotinhas/momentos/nos.png" alt="Momentos Felizes">
+        <img src="fotinhas/momentos/image.png" alt="Momentos Felizes">
+    </div>
+
+    <div class="hidden-content" id="messages">
+        <h2>Mensagens e Lembranças</h2>
+        <p>Mesmo quando estamos longe, eu sinto você comigo. Cada mensagem, cada lembrança, cada detalhe do que vivemos me mostra que o que temos é real e único. Rihan, eu quero que você perceba que nada do que aconteceu pode diminuir o amor que sentimos um pelo outro. Cada momento nosso é especial, cada gesto seu me faz sentir amada e segura. Quando a cabeça ficar confusa ou surgirem dúvidas, quero que você se lembre de nós dois, de tudo que vivemos e do quanto nosso amor é forte. Eu te escolho todos os dias, e sei que você me escolhe também. Nosso vínculo é especial demais para ser abalado por inseguranças.</p>
+        <img src="fotinhas/momentos/bolinho.png" alt="Mensagens Especiais">
+        <img src="fotinhas/momentos/noss.jpg" alt="Mensagens Especiais">
+        <img src="fotinhas/momentos/snoopy.png" alt="Mensagens Especiais">
+    </div>
+
+    <div class="hidden-content" id="surprise">
+        <h2>Surpresa Especial 🎉</h2>
+        <p>Rihan, mesmo com todas as brigas e confusões que tivemos, a gente se ama demais e nenhum medo de perder um ao outro vai mudar isso. Eu mal posso esperar pela nossa viagem, de finalmente te ver, te abraçar, te beijar, comer nosso Subway juntos e viver cada segundo daquele momento intensamente. E agora, com o convite da minha mãe pra você vir aqui e conhecer todo mundo, quero que saiba que você é super bem-vindo e que quero te mostrar cada pedacinho da minha vida. Eu te amo de verdade, e quero que você nunca duvide disso.</p>
+        <img src="fotinhas/momentos/FortniteClient-Win64-Shipping_lxSQv3ZYD1.jpg" alt="Surpresa Especial">
+        <img src="fotinhas/momentos/imagedivisa.png" alt="Surpresa Especial">
+        <img src="fotinhas/momentos/imagefort.png" alt="Surpresa Especial">
+        <img src="fotinhas/momentos/crocs.png" alt="Surpresa Especial">
+    </div>
+</div>
+
+<script>
+// Alternar conteúdo
+function toggleContent(id) {
+    const sections = document.querySelectorAll('.hidden-content');
+    sections.forEach(section => {
+        section.style.display = section.id === id 
+            ? section.style.display === 'block' ? 'none' : 'block'
+            : 'none';
+    });
+}
+
+// Criar quadradinhos flutuantes
+const colors = ['#ff5ca2','#ff1a6d','#ff99cc','#ffd1e8','#ff80b3'];
+for(let i=0; i<40; i++){
+    let square = document.createElement('div');
+    square.className = 'square';
+    square.style.left = Math.random() * 100 + 'vw';
+    let size = 10 + Math.random() * 20;
+    square.style.width = size + 'px';
+    square.style.height = size + 'px';
+    square.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+    square.style.animationDuration = (5 + Math.random() * 10) + 's';
+    square.style.animationDelay = Math.random() * 5 + 's';
+    document.body.appendChild(square);
+}
+</script>
+
+</body>
+</html>
